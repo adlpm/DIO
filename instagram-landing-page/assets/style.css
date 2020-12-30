@@ -95,6 +95,8 @@ body {
   border-radius: 0.4rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   transition: 0.2s;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .instagram-continue .group .instagram-login:hover {
@@ -107,8 +109,16 @@ body {
   margin-top: 1rem;
 }
 
+.instagram-continue .group .instagram-logout:hover {
+  color: #f3f3f3;
+}
+
 .instagram-continue .group .not-account {
   color: #ffffff;
+}
+
+.instagram-continue .group .not-account:nth-child(1) {
+  margin-bottom: 0.3rem;
 }
 
 .instagram-continue .group .link-blue {
@@ -155,4 +165,26 @@ body {
 
 .instagram-continue .get-the-app .download .app-download:nth-child(2) {
   background-image: url('./img/googleplay-button.png');
+}
+
+/* -----------media------------- */
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .instagram-continue {
+    width: 100%;
+  }
 }
